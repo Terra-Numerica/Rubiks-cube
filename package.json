@@ -1,0 +1,22 @@
+{
+  "name": "rubiks-cube-3d",
+  "version": "1.0.0",
+  "description": "Rubik's Cube 3D Interactif - Terra Numerica",
+  "type": "module",
+  "homepage": "https://Terra-Numerica.github.io/Rubiks-cube",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.170.0",
+    "gh-pages": "^6.3.0",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.10"
+  }
+}
