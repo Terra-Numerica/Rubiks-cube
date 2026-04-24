@@ -130,22 +130,7 @@ function createUI(): void {
     `;
     document.body.appendChild(controls);
 
-    // Face legend (permanently visible so users know face abbreviations)
-    const faceLegend = document.createElement('div');
-    faceLegend.id = 'face-legend';
-    faceLegend.innerHTML = `
-        <div class="legend-title">Faces</div>
-        <div class="legend-grid">
-            <div class="legend-item"><span class="face-key">U</span><span class="face-name">Up</span></div>
-            <div class="legend-item"><span class="face-key">D</span><span class="face-name">Down</span></div>
-            <div class="legend-item"><span class="face-key">L</span><span class="face-name">Left</span></div>
-            <div class="legend-item"><span class="face-key">R</span><span class="face-name">Right</span></div>
-            <div class="legend-item"><span class="face-key">F</span><span class="face-name">Front</span></div>
-            <div class="legend-item"><span class="face-key">B</span><span class="face-name">Back</span></div>
-        </div>
-    `;
-    // append legend inside controls so it stays near the game buttons
-    controls.appendChild(faceLegend);
+    // Face legend removed per user request (was displaying "Faces" with keys U/D/L/R/F/B)
 
     // Instructions
     const instructions = document.createElement('div');
